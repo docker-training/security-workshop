@@ -1,0 +1,35 @@
+{
+  "title": "Security Lab: Capabilities",
+  "description": "You will learn the basics of capabilities in the Linux kernel and how they work with Docker, some basic commands to view and manage them, as well as how to add and remove capabilities in new containers.",
+  "difficulty": "Advanced",
+  "time": "30 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - Introduction to capabilities",
+      "text": "step1.md"
+    }, {
+      "title": "Step 2 - Working with Docker and capabilities",
+      "text": "step2.md"
+    }, {
+      "title": "Step 3 - Testing Docker capabilities",
+      "text": "step3.md"
+    }, {
+      "title": "Step 4 - Extra for experts",
+      "text": "step4.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "courseData": "env-init.sh",
+      "credits": ""
+    },
+    "finish": {
+    "text": "finish.md"
+    }
+  },
+  "backend": {
+		"imageid": "docker1604-direct"
+	},
+	"environment": {
+		"uilayout": "terminal"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "title": "Security Lab: Seccomp",
+  "description": "seccomp is a sandboxing facility in the Linux kernel that acts like a firewall for system calls (syscalls).",
+  "difficulty": "Advanced",
+  "time": "30 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - Seccomp and Docker --security-opt flag",
+      "text": "step1.md"
+    }, {
+      "title": "Step 2 - Test a seccomp profile",
+      "text": "step2.md"
+    }, {
+      "title": "Step 3 - Run a container with no seccomp profile",
+      "text": "step3.md"
+    }, {
+      "title": "Step 4 - Selectively remove syscalls",
+      "text": "step4.md"
+    }, {
+      "title": "Step 5 - Write a seccomp profile",
+      "text": "step5.md"
+    }, {
+      "title": "Step 6 - A few Gotchas",
+      "text": "step6.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "courseData": "env-init.sh",
+      "credits": ""
+    },
+    "finish": {
+    "text": "finish.md"
+    }
+  },
+  "backend": {
+		"imageid": "docker1604-direct"
+	},
+	"environment": {
+		"uilayout": "terminal"
+  }
+}
