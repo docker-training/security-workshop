@@ -1,3 +1,4 @@
+# Step 5 - Write a `seccomp` profile
 
 It is possible to write Docker seccomp profiles from scratch. You can also edit existing profiles. In this step you will learn about the syntax and behavior of Docker seccomp profiles.
 

@@ -1,3 +1,4 @@
+# Step 3 - Docker Content Trust
 
 It's not easy to find the digest of a particular image tag. This is because it is computed from the hash of the image contents and stored in the image manifest. The image manifest is then stored in the Registry. This is why we needed a docker pull by tag to find digests previously. It would also be desirable to have additional security guarantees such as image freshness.
 

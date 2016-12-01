@@ -1,6 +1,6 @@
+# Step 2 - Max-out two CPUs
 
 In this step you'll start a new container that will max out two CPU cores. You will need `htop` installed on your Docker Host, and you will need to be running a Docker Host that has two or more CPU cores. This step will still work if your Docker Host only has a single core. However, some of the `htop` outputs will be slightly different.
-
 
 
 ## Setup

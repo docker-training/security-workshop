@@ -1,3 +1,5 @@
+# Step 4 - CPU share constraints
+
 By default, all containers get an equal share of time executing on the Docker Host's CPUs. This allocation of time can be modified by changing the container’s CPU share weighting relative to the weighting of all other running containers.
 
 The ``--cpu-shares`` flag takes a value from 0-1024. The default value is 1024, and a value of 0 will also default to 1024. If three containers are running and one has 1024 shares, while the other two have 512, the first container will get 50% of processor time while the other two will each get 25%. However, these shares are only enforced when CPU intensive tasks are running. When a container is not busy, other containers can use the free CPU time.

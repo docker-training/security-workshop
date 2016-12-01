@@ -1,3 +1,4 @@
+# Step 6 - Preventing a fork bomb
 A _fork bomb_ is a form of denial of service (DoS) attack where a process continually replicates itself with the goal of depleting system resources to the point where a system can no longer function.
 
 In this step you will use the ``--pids-limit`` flag to limit the number of processes a container can fork at runtime. This will prevent a fork bomb from consuming the Docker Host's entire process table.

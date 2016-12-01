@@ -1,6 +1,6 @@
 
 
-## Summary
+# Summary
 
 Congratulations! You've seen how to use some of the cgroups features supported by Docker that allow you to limit and constrain a container's access to Docker Host system resources.
 

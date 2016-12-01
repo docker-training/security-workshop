@@ -1,3 +1,5 @@
+# Step 2 - Test a `seccomp` profile
+
 In this step you will use the `deny.json` seccomp profile included the lab guides repo. This profile has an empty syscall whitelist meaning all syscalls will be blocked. As part of the demo you will add all `capabilities` and effectively disable apparmor so that you know that only your seccomp profile is preventing the syscalls.
 
 

@@ -1,3 +1,5 @@
+# Step 5 - `Docker Compose` and `cgroups`
+
 In this step you'll see how to set CPU affinities via Docker Compose files.
 
 See this section of the [Docker Compose documentation](https://docs.docker.com/compose/compose-file/#cpu-shares-cpu-quota-cpuset-domainname-hostname-ipc-mac-address-mem-limit-memswap-limit-privileged-read-only-restart-shm-size-stdin-open-tty-user-working-dir) for more information on leveraging other cgroup capabilities using Docker Compose.

@@ -1,3 +1,4 @@
+# Step 2 - Working with Docker and capabilities
 
 In this step you'll learn the basic approach to managing capabilities with Docker. You'll also learn the Docker commands used to manage capabilities for a container's root account.
 

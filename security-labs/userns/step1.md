@@ -1,3 +1,5 @@
+# Step 1 - Daemon and container defaults
+
 In this step you'll verify that the Docker daemon, and containers, run by default as `root`. You will also force a single container to run under a different security context.
 
 You must perform this step while logged in as the **ubuntu** user.

@@ -1,3 +1,4 @@
+# Step 3 - Run a container with no `seccomp` profile
 
 Unless you specify a different profile, Docker will apply the [default seccomp profile](https://github.com/docker/docker/blob/master/profiles/seccomp/default.json) to all new containers. In this step you will see how to force a new container to run without a seccomp profile.
 

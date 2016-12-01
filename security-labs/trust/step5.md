@@ -1,3 +1,5 @@
+# Step 5 - Extra for experts
+
 Docker Content Trust is powered by [Notary](https://github.com/docker/notary), an open-source TUF-client and server that can operate over arbitrary trusted collections of data. Notary has its own CLI with robust features such as the ability to rotate keys and remove trust data. In this step you will play with the Notary CLI and a local instance of the Notary server instead of the one deployed alongside Docker Hub.
 
 ## Install notray

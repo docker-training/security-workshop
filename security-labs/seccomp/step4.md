@@ -1,3 +1,5 @@
+# Step 4 - Selectively remove syscalls
+
 In this step you will see how applying changes to the `default.json` profile can be a good way to fine-tune which syscalls are available to containers.
 
 The `default-no-chmod.json` profile is a modification of the `default.json` profile with the ``chmod()``, ``fchmod()``, and ``chmodat()`` syscalls removed from its whitelist.

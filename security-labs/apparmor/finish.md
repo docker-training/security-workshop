@@ -1,6 +1,6 @@
 
 
-## Summary
+# Summary
 
 Congratulations! You have completed this lab on `AppArmor`!
 

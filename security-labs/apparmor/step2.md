@@ -1,3 +1,4 @@
+# Step 2 - The default-docker `AppArmor` profile
 In this step you will check the status of AppArmor on your Docker Host and learn how to identify whether or not Docker containers are running with an AppArmor profile.
 
 ## Task

@@ -1,3 +1,5 @@
+# Step 2 - The ``--user`` flag
+
 In this step you will start a new container and force it to run under the security context of the user that you are logged in as.
 
 You should be logged in as the **ubuntu** user.

@@ -1,4 +1,4 @@
-
+# Step 1 - Pulling images by tag
 
 The most common and basic way to pull Docker image is by `tag`. The is where you specify an image name followed by an alphanumeric tag. The image name and tag are separated by a colon ``:``.
 
@@ -23,7 +23,7 @@ You will see the message starts with:
 ```
 edge: Pulling from library/alpine                                                                                              
 2f12ed5a7535: Pull complete                                                                                                    
-Digest: sha256:cd9c03c2d382fcf00c31dc1635445163ec185dfffb51242d9e097892b3b0d5b4 
+Digest: sha256:cd9c03c2d382fcf00c31dc1635445163ec185dfffb51242d9e097892b3b0d5b4
 ```
 and ends with:
 

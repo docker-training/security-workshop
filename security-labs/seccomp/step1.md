@@ -1,6 +1,6 @@
+# Step 1 - Clone the labs GitHub repo
 
-
-## Task: check `seccomp` is enabled.
+## Task 1 : check `seccomp` is enabled.
 
 The following commands show you how to check if `seccomp` is enabled in your system's kernel:
 
@@ -33,7 +33,7 @@ Docker supports many security related technologies. It is possible for other sec
 For example, the following `docker run` flags add all capabilities and disable apparmor: ``--cap-add ALL --security-opt apparmor=unconfined``.
 
 
-## Task: Clone the labs GitHub repo
+## Task 2: Clone the labs GitHub repo
 
 In this step you will clone the lab's GitHub repo so that you have the seccomp profiles that you will use for the remainder of this lab.
 

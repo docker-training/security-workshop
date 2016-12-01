@@ -1,6 +1,6 @@
 
 
-## Summary
+# Summary
 
 Congratulations! You've seen how to use some of the **capabilities** features supported by Docker and how to add and remove capabilities in new containers.
 

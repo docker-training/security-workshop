@@ -1,3 +1,5 @@
+# Step 3 - Enabling `user namespaces`
+
 **User namespaces** have been part of the Linux kernel for a while. They have been available in Docker since version 1.10 of the Linux Docker Engine. They allow the Docker daemon to create an isolated namespace that looks and feels like a root namespace. However, the `root` user inside of this namespace is mapped to a non-privileged `uid` on the Docker Host. This means that containers can effectively have root privilege inside of the user namespace, but have no privileges on the Docker Host.
 
 In this step you'll see how to implement *user namespaces*.

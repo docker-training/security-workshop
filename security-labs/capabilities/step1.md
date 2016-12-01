@@ -1,4 +1,4 @@
-
+#Step 1 - Introduction to capabilities
 
 
 In this step you'll learn the basics of **capabilities**.

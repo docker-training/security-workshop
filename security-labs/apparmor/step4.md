@@ -1,3 +1,4 @@
+# Step 4 - `AppArmor` and defense in depth
 
 Defense in depth is a model where multiple different lines of defense work together to provide increased overall defensive capabilities. Docker uses AppArmor, seccomp, and Capabilities to form a deep defense system.
 

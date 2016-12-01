@@ -1,3 +1,4 @@
+# Step 3 - Set CPU affinity
 
 Docker makes it possible to restrict containers to a particular CPU core, or set of CPU cores. In this step you'll see how to restrict a container to a single CPU core using docker run with the ``--cpuset-cpus`` flag.
 

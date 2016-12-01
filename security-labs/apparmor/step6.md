@@ -1,6 +1,6 @@
+# Step 6 - Extra for experts
+
 AppArmor profiles are very application-specific. Although we've had some practice writing our own profiles, the preferred method is using tools to generate and debug them. In this step We'll explore `aa-complain` and `aa-genprof` that ship as part of the `apparmor-utils` package.
-
-
 
 ## Task
 The following steps assume you are using a modern Ubuntu Linux Docker Host with a GUI installed and the FireFox web browser.

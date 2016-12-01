@@ -1,3 +1,5 @@
+# Step 6 - A few Gotchas
+
 The remainder of this lab will walk you through a few things that are easy to miss when using seccomp with Docker.
 
 ### Timing of a seccomp profile application

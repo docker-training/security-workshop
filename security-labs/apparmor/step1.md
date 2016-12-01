@@ -1,3 +1,5 @@
+# Step 1 - `AppArmor` primer
+
 The following command shows you how to check if AppArmor is enabled in your system's kernel:
 
 `docker info | grep apparmor`{{execute}}

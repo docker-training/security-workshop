@@ -1,3 +1,4 @@
+# Step 3 - Running a Container without an `AppArmor` profile
 
 In this step you will see how to run a new container without an AppArmor profile.
 
