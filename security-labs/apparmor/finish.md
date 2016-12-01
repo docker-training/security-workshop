@@ -2,4 +2,8 @@
 
 ## Summary
 
-Congratulations you have completed this lab on `AppArmor`!
+Congratulations! You have completed this lab on `AppArmor`!
+
+### Further reading:
+
+- docker: https://docs.docker.com/engine/security/apparmor/

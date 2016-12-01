@@ -25,9 +25,9 @@ You will see 2 CPU cores, `` CPU(s):                2 ``
 Clone the lab's GitHub repo locally on your Docker Host and change into the `cgroups/cpu-stress` directory.
 
 
-`sudo git clone https://github.com/riyazdf/dockercon-workshop.git`{{execute}}
+`sudo git clone https://github.com/docker-training/security-workshop.git`{{execute}}
 
-`cd dockercon-workshop/cgroups/cpu-stress`{{execute}}
+`cd security-workshop/cgroups/cpu-stress`{{execute}}
 
 
 TODO: Note to lab owner. We might want to move this repo to a more official place along with the rest of the HOL guides and then update this doc accordingly.

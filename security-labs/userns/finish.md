@@ -11,4 +11,5 @@ You've completed your security lab: User Namespaces scenario!
 ## Additional Resources
 
 You can refer to the following resources for more information and help:
-- Docker: http://www.docker.com
+- Docker: https://docs.docker.com/engine/security/security/
+- User Namespaces in Docker Engine: https://success.docker.com/Datacenter/Apply/Introduction_to_User_Namespaces_in_Docker_Engine

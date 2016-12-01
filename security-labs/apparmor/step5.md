@@ -8,9 +8,13 @@ WordPress and its plugins run as PHP. This means an attacker could upload their 
 
 In this step we'll show how a custom AppArmor profile could have protected Dockerized WordPress from this attack vector.
 
+Clone the lab's GitHub repo locally on your Docker Host and change into the `apparmor/wordpress` directory.
+
+`sudo git clone https://github.com/docker-training/security-workshop.git`{{execute}}
+
 If you have not already, `cd` into the lab's `wordpress` directory.
 
-`cd dockercon-workshop/apparmor/wordpress`{{execute}}
+`cd security-workshop/apparmor/wordpress`{{execute}}
 
 List the files in the directory.
 
@@ -32,7 +36,7 @@ Bring the application up.
 
 Point your browser to the public IP of your lab instance on port 8080.
 
-**FIX THIS** : You should have received the IP addresses of all of your lab instances from the lab administrator).
+**Get IP address of your node** : You should have received the IP addresses of all of your lab instances from the instructor.
 
 
 

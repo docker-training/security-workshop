@@ -4,6 +4,8 @@ The following command shows you how to check if AppArmor is enabled in your syst
 
 By default, Docker applies the `docker-default` AppArmor profile to new containers. This profile is located in ``/etc/apparmor.d/docker/`` and you can find more information about it in the [documentation](https://docs.docker.com/engine/security/apparmor/#understand-the-policies).
 
+## Task
+
 Check the `docker-default` AppArmor.
 
 `cat /etc/apparmor.d/docker`{{execute}}

@@ -39,10 +39,10 @@ In this step you will clone the lab's GitHub repo so that you have the seccomp p
 
 Clone the labs GitHub repo.
 
-`git clone https://github.com/riyazdf/dockercon-workshop`{{execute}}
+`git clone https://github.com/docker-training/security-workshop.git`{{execute}}
 
-Change into the dockercon-workshop/seccomp directory.
+Change into the security-workshop/seccomp directory.
 
-`cd dockercon-workshop/seccomp`{{execute}}
+`cd dsecurity-workshop/seccomp`{{execute}}
 
-The remaining steps in this lab will assume that you are running commands from this `dockercon-workshop/seccomp` directory. This will be important when referencing the seccomp profiles on the various docker run commands throughout the lab.
+The remaining steps in this lab will assume that you are running commands from this `security-workshop/seccomp` directory. This will be important when referencing the seccomp profiles on the various docker run commands throughout the lab.
