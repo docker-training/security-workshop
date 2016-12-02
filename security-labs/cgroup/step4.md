@@ -14,18 +14,18 @@ In this step you will use the `docker run` command with the ``--cpu-shares`` fla
 
 Start the first container with 768 CPU shares.
 
-`sudo docker run -d --name container-1 --cpuset-cpus 0 --cpu-shares 768 stress-cpu`{{execute}}
+`docker run -d --name container-1 --cpuset-cpus 0 --cpu-shares 768 stress-cpu`{{execute}}
 
 
 Start the second container with 256 CPU shares.
 
-`sudo docker run -d --name container-2 --cpuset-cpus 0 --cpu-shares 256 stress-cpu`{{execute}}
+`docker run -d --name container-2 --cpuset-cpus 0 --cpu-shares 256 stress-cpu`{{execute}}
 
 
 
 Verify that both containers are running with the docker ps command.
 
-  `sudo docker ps`{{execute}}
+  `docker ps`{{execute}}
 
 
 
@@ -35,10 +35,15 @@ View the output of `htop`.
 
 Notice two things about the htop output. First, only a single CPU is being maxed out. Second, there are four `stress` processes running. The first two in the list equate to ~75% of CPU time, and the second two equate to ~25% of CPU time.
 
+Quit `htop` by typing `q`.
+
 Stop and remove the `stresser` container.
 
-`sudo docker stop container-1 && sudo docker rm container-1`{{execute}}
-`sudo docker stop container-2 && sudo docker rm container-2`{{execute}}
+`docker stop container-1 && docker rm container-1`{{execute}}
+
+It will take little while!
+
+`docker stop container-2 && docker rm container-2`{{execute}}
 
 It will take little while!
 

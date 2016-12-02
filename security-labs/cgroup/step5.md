@@ -24,7 +24,7 @@ The above `docker-compose.yml` file will ensure that containers based from it wi
 Bring the application up in the background.
 
 
-`sudo docker-compose up -d`{{execute}}
+`docker-compose up -d`{{execute}}
 
 
 Run `htop` to see the effect of the cpuset parameter.
@@ -34,8 +34,10 @@ Run `htop` to see the effect of the cpuset parameter.
 
   The `htop` output above shows the container and it's two stress processes locked to CPU core 1 (`cpuset` in Docker Compose indexes CPU cores starting at 0 whereas `htop` indexes CPU cores starting at 1).
 
+Quit `htop` by typing `q`.
+
 Stop and remove the `cpustress_cpu-stress` container.
 
-``sudo docker stop cpustress_cpu-stress_1 && sudo docker rm cpustress_cpu-stress_1``{{execute}}
+``docker stop cpustress_cpu-stress_1 && docker rm cpustress_cpu-stress_1``{{execute}}
 
   In this step you've seen how Docker Compose can set container CPU affinities. Remember that Docker Compose can also set CPU quotas and shares. See the [documentation](https://docs.docker.com/compose/compose-file/#cpu-shares-cpu-quota-cpuset-domainname-hostname-ipc-mac-address-mem-limit-memswap-limit-privileged-read-only-restart-shm-size-stdin-open-tty-user-working-dir) for more detail.

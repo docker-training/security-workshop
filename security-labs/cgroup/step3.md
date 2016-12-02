@@ -7,7 +7,7 @@ Docker makes it possible to restrict containers to a particular CPU core, or set
 Run a new Docker container called `stresser` and restrict it to running on the first CPU on the system.
 
 
-`sudo docker run -d --name stresser --cpuset-cpus 0 stress-cpu`{{execute}}
+`docker run -d --name stresser --cpuset-cpus 0 stress-cpu`{{execute}}
 
 The ``--cpuset-cpus`` flag indexes CPU cores starting at 0. Therefore, CPU 0 is the first CPU on the system. You can specify multiple CPU cores as 0-4, 0,3 etc.
 
@@ -25,9 +25,11 @@ There are a few things worth noting about what you have just done:
 - Each of the two stress processes is consuming ~50% of available time on the single CPU core they are executing on.
 - `htop` indexes CPU cores starting at 1 whereas ``--cpuset-cpus`` indexes starting at 0.
 
+Quit `htop` by typing `q`.
+
 Stop and remove the `stresser` container.
 
-`sudo docker stop stresser && sudo docker rm stresser`{{execute}}
+`docker stop stresser && docker rm stresser`{{execute}}
 
 It will take little while!
 
