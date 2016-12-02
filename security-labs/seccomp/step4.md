@@ -9,10 +9,10 @@ The `default-no-chmod.json` profile is a modification of the `default.json` prof
 
 Start a new container with the `default-no-chmod.json` profile and attempt to run the `chmod 777 / -v`command.
 
-`cd /home/ubuntu/dockercon-workshop/seccomp/seccomp-profiles`{{execute}}
+`cd seccomp-profiles`{{execute}}
 
 
-`sudo docker run --rm -it --security-opt seccomp=default-no-chmod.json alpine sh`{{execute}}
+`docker run --rm -it --security-opt seccomp=default-no-chmod.json alpine sh`{{execute}}
 
 From the container, try run the followings;
 
@@ -32,7 +32,7 @@ Exit the container.
 
 Start another new container with the default.json profile and run the same chmod 777 / -v.
 
-`sudo docker run --rm -it --security-opt seccomp=default.json alpine sh`{{execute}}
+`docker run --rm -it --security-opt seccomp=default.json alpine sh`{{execute}}
 
 The command succeeds this time because the default.json profile has the chmod(), fchmod(), and chmodat syscalls included in its whitelist.
 

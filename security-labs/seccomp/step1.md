@@ -39,7 +39,7 @@ In this step you will clone the lab's GitHub repo so that you have the `seccomp`
 
 Clone the labs GitHub repo. (Skip if you already done this in previous step!)
 
-`git clone https://github.com/docker-training/security-workshop.git`{{execute}}
+`sudo git clone https://github.com/docker-training/security-workshop.git`{{execute}}
 
 Change into the security-workshop/seccomp directory.
 

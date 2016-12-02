@@ -32,7 +32,7 @@ Exit the container.
 
 Confirm that it was the default-docker AppArmor profile that denied the operation by starting a new container without an AppArmor profile and retrying the same operation.
 
-``sudo docker run --rm -it --cap-add SYS_ADMIN --security-opt seccomp=unconfined --security-opt apparmor=unconfined ubuntu sh``{{execute}}
+``docker run --rm -it --cap-add SYS_ADMIN --security-opt seccomp=unconfined --security-opt apparmor=unconfined ubuntu sh``{{execute}}
 
 
 ``mkdir 1; mkdir 2; mount --bind 1 2``{{execute}}

@@ -6,15 +6,15 @@ In this step you will see how to run a new container without an AppArmor profile
 
 If you haven't already done so, stop and remove all containers on your system.
 
-``sudo docker rm -f $(docker ps -aq)``{{execute}}
+``docker rm -f $(docker ps -aq)``{{execute}}
 
 Use the ``--security-opt apparmor=unconfined`` flag to start a new container in the background without an AppArmor profile.
 
-`sudo docker run -dit --security-opt apparmor=unconfined alpine sh`{{execute}}
+`docker run -dit --security-opt apparmor=unconfined alpine sh`{{execute}}
 
 Confirm that the container is running.
 
-`sudo docker ps`{{execute}}
+`docker ps`{{execute}}
 
 
 Use the ``apparmor_status`` command to verify that the new container is not running with an AppArmor profile.
@@ -27,6 +27,6 @@ Stop and remove the container started in the previous steps.
 
 The example below uses the Container ID "ace79581a19a". This will be different in your environment.
 
-`sudo docker rm -f ace79581a19a`
+`docker rm -f ace79581a19a`
 
 In this step you learned that the ``--security-opt apparmor=unconfined`` flag will start a new container without an AppArmor profile.

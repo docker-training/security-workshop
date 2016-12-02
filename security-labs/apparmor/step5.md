@@ -34,7 +34,7 @@ You can see that the file is describing a WordPress application with two service
 
 Bring the application up.
 
-``sudo docker-compose up &``{{execute}}
+``docker-compose up &``{{execute}}
 
 Point your browser to the public IP of your lab instance on port 8080.
 
@@ -58,7 +58,7 @@ Bring the WordPress application down.
 
 Run this command from the shell of your Docker Host, not the shell of the `wordpress` container.
 
-`sudo docker-compose down`{{execute}}
+`docker-compose down`{{execute}}
 
 Add the `wparmor` profile to the `wordpress` service in the `docker-compose.yml` file.
 
@@ -103,16 +103,16 @@ Parse the `wparmor` profile.
 
 Bring the Docker Compose WordPress app back up.
 
-``sudo docker-compose up &``{{execute}}
+``docker-compose up &``{{execute}}
 
 
 Verify that the app is up.
 
-`sudo docker-compose ps`{{execute}}
+`docker-compose ps`{{execute}}
 
 
 Bring the application down.
 
-``sudo docker-compose down``{{execute}}
+``docker-compose down``{{execute}}
 
 Congratulations! You've secured a WordPress instance against adding malicious plugins :)

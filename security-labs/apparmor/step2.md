@@ -13,11 +13,11 @@ Notice the **docker-default** profile is in enforce mode. This is the AppArmor p
 
 Run a new container and put it in the back ground.
 
-`sudo docker run -dit alpine sh`{{execute}}
+`docker run -dit alpine sh`{{execute}}
 
 Confirm that the container is running.
 
-`sudo docker ps`{{execute}}
+`docker ps`{{execute}}
 
 Run the apparmor_status command again.
 
@@ -32,6 +32,6 @@ Stop and remove the container started in the previous steps.
 
 The example below uses the Container ID "1bb16561bc06". This will be different in your environment.
 
-`sudo docker rm -f 1bb16561bc06`
+`docker rm -f 1bb16561bc06`
 
 In this step you learned how to check the AppArmor status on your Docker Host and how to check if a container is running with the **docker-default** AppArmor profile.
