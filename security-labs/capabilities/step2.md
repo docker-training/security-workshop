@@ -17,15 +17,15 @@ Option 2 as the most realistic as of Docker 1.12. Option 3 would be ideal but no
 
 In the following commands, ``$CAP`` will be used to indicate one or more individual capabilities.
 
-1. To drop capabilities from the root account of a container.
+* To drop capabilities from the root account of a container.
 
 ``docker run --rm -it --cap-drop $CAP alpine sh``
 
-2. To add capabilities to the root account of a container.
+* To add capabilities to the root account of a container.
 
 ``docker run --rm -it --cap-add $CAP alpine sh``
 
-3. To drop all capabilities and then explicitly add individual capabilities to the root account of a container.
+* To drop all capabilities and then explicitly add individual capabilities to the root account of a container.
 
 ``docker run --rm -it --cap-drop ALL --cap-add $CAP alpine sh``
 
