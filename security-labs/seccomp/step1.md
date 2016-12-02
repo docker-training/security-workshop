@@ -35,7 +35,7 @@ For example, the following `docker run` flags add all capabilities and disable a
 
 ## Task 2: Clone the labs GitHub repo
 
-In this step you will clone the lab's GitHub repo so that you have the seccomp profiles that you will use for the remainder of this lab.
+In this step you will clone the lab's GitHub repo so that you have the `seccomp` profiles that you will use for the remainder of this lab.
 
 Clone the labs GitHub repo.
 
@@ -43,6 +43,6 @@ Clone the labs GitHub repo.
 
 Change into the security-workshop/seccomp directory.
 
-`cd dsecurity-workshop/seccomp`{{execute}}
+`cd dsecurity-workshop/security-labs/seccomp`{{execute}}
 
-The remaining steps in this lab will assume that you are running commands from this `security-workshop/seccomp` directory. This will be important when referencing the seccomp profiles on the various docker run commands throughout the lab.
+The remaining steps in this lab will assume that you are running commands from this `security-workshop/security-labs/seccomp` directory. This will be important when referencing the `seccomp` profiles on the various docker run commands throughout the lab.

@@ -16,7 +16,7 @@ Clone the lab's GitHub repo locally on your Docker Host and change into the `app
 
 If you have not already, `cd` into the lab's `wordpress` directory.
 
-`cd security-workshop/apparmor/wordpress`{{execute}}
+`cd security-workshop/security-labs/apparmor/wordpress`{{execute}}
 
 List the files in the directory.
 
