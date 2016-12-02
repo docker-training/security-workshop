@@ -59,6 +59,11 @@ Bring up a local notary server and signer.
 
   `mkdir -p ~/.notary && cp cmd/notary/config.json cmd/notary/root-ca.crt ~/.notary`{{execute}}
 
+
+  Initialize a new trusted collection on your local server
+
+  `notary init example.com/scripts`{{execute}}
+
   You will be prompted for passphrases for the root and repository keys. This is for the same reasons as it was when you first pushed a repo with Docker Content Trust enabled.
 
   Add content to your trusted collection by running a sequence of notary add example.com/scripts <NAME> <FILE>, notary publish example.com/scripts, and notary list example.com/scripts. This is a the sequence, in order:
