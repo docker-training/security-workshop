@@ -7,7 +7,7 @@ Unless you specify a different profile, Docker will apply the [default seccomp p
 
 Start a new container with the ``--security-opt seccomp=unconfined`` flag so that no seccomp profile is applied to it.
 
-`sudo docker run --rm -it --security-opt seccomp=unconfined debian:jessie sh`{{execute}}
+`docker run --rm -it --security-opt seccomp=unconfined debian:jessie sh`{{execute}}
 
 From the terminal of the container run a `whoami` command to confirm that the container works and can make syscalls back to the Docker Host.
 

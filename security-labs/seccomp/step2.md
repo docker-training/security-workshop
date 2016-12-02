@@ -9,7 +9,7 @@ In this step you will use the `deny.json` seccomp profile included the lab guide
 Use the docker run command to try to start a new container with all capabilities added, `apparmor` unconfined, and the `seccomp-profiles/deny.json` seccomp profile applied.
 
 
-`sudo docker run --rm -it --cap-add ALL --security-opt apparmor=unconfined --security-opt seccomp=seccomp-profiles/deny.json alpine sh`{{execute}}
+`docker run --rm -it --cap-add ALL --security-opt apparmor=unconfined --security-opt seccomp=seccomp-profiles/deny.json alpine sh`{{execute}}
 
 
 

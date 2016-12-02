@@ -29,7 +29,7 @@ The remainder of this step will show you some examples of libcap and libcap-ng.
 
 The following command will start a new container using Alpine Linux, install the libcap package and then list capabilities.
 
-   ``sudo docker run --rm -it alpine sh -c 'apk add -U libcap; capsh --print'``{{execute}}
+   ``docker run --rm -it alpine sh -c 'apk add -U libcap; capsh --print'``{{execute}}
 
 
 **Current** is multiple sets separated by spaces. Multiple capabilities within the same set are separated by commas ``,``. The letters following the ``+`` at the end of each set are as follows:

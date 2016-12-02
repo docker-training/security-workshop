@@ -5,7 +5,9 @@ In this step you'll learn the basic approach to managing capabilities with Docke
 As of Docker 1.12 you have 3 high level options for using capabilities:
 
 1. Run containers as `root` with a large set of capabilities and try to manage capabilities within your container manually.
+
 2. Run containers as `root` with limited capabilities and never change them within a container.
+
 3. Run containers as an unprivileged user with no capabilities.
 
 Option 2 as the most realistic as of Docker 1.12. Option 3 would be ideal but not realistic. Option 1 should be avoided wherever possible.
@@ -16,18 +18,23 @@ Option 2 as the most realistic as of Docker 1.12. Option 3 would be ideal but no
 In the following commands, ``$CAP`` will be used to indicate one or more individual capabilities.
 
 1. To drop capabilities from the root account of a container.
-``sudo docker run --rm -it --cap-drop $CAP alpine sh``
+
+``docker run --rm -it --cap-drop $CAP alpine sh``
+
 2. To add capabilities to the root account of a container.
-``sudo docker run --rm -it --cap-add $CAP alpine sh``
+
+``docker run --rm -it --cap-add $CAP alpine sh``
+
 3. To drop all capabilities and then explicitly add individual capabilities to the root account of a container.
-``sudo docker run --rm -it --cap-drop ALL --cap-add $CAP alpine sh``
+
+``docker run --rm -it --cap-drop ALL --cap-add $CAP alpine sh``
 
 The Linux kernel prefixes all capability constants with ``CAP_``. For example, ``CAP_CHOWN``, ``CAP_NET_ADMIN``, ``CAP_SETUID``, ``CAP_SYSADMIN`` etc.
 
  **Docker capability constants are not prefixed with ``CAP_`` but otherwise match the kernel's constants.**
 
 ```
-$ sudo docker run --rm -it --cap-drop CHOWN alpine sh
+$ docker run --rm -it --cap-drop CHOWN alpine sh
 ```
 
 For more information on capabilities, including a full list, see the [capabilities man page](http://man7.org/linux/man-pages/man7/capabilities.7.html)

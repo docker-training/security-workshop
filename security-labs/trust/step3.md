@@ -40,8 +40,14 @@ Pull and unsigned image.
 You cannot pull unsigned images with Docker Content Trust enabled. Once Docker Content Trust is enabled you can only pull, run, or build with trusted images.
 
 ```
-Pulling repository docker.io/riyaz/dockercon                                                                      
-Tag untrust not found in repository docker.io/riyaz/dockercon   
+Pulling repository docker.io/riyaz/dockercon
+Tag untrust not found in repository docker.io/riyaz/dockercon
+```
+
+or
+
+```
+No trust data for untrust  
 ```
 
 ## Task: The Update Framework (TUF)

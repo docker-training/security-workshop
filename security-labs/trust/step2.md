@@ -12,12 +12,12 @@ This is why pulling by **digest** is such a powerful operation. Thanks to the co
 Pull the Alpine image with the **sha256:b7233dafbed64e3738630b69382a8b231726aa1014ccaabc1947c5308a8910a7** digest.
 
 
-`sudo docker pull alpine@sha256:b7233dafbed64e3738630b69382a8b231726aa1014ccaabc1947c5308a8910a7`{{execute}}
+`docker pull alpine@sha256:b7233dafbed64e3738630b69382a8b231726aa1014ccaabc1947c5308a8910a7`{{execute}}
 
 Check that the pull succeeded.
 
 
-``sudo docker images --digests alpine``{{execute}}
+``docker images --digests alpine``{{execute}}
 
 Notice that there are now two Alpine images in the Docker Hosts local repository. One lists the `edge` tag. The other lists ``<none>`` as the tag along with the ``b7233daf...`` digest.
 

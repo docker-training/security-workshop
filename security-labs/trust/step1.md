@@ -5,7 +5,7 @@ The most common and basic way to pull Docker image is by `tag`. The is where you
 For example:
 
 
-`sudo docker pull alpine:edge`
+`docker pull alpine:edge`
 
 ## Task
 
@@ -16,7 +16,7 @@ If no tag is specified, Docker will pull the image with the `latest` tag.
 
 Pull the Alpine image with the `edge` tag.
 
-`sudo docker pull alpine:edge`{{execute}}
+`docker pull alpine:edge`{{execute}}
 
 You will see the message starts with:
 
@@ -33,11 +33,11 @@ Status: Downloaded newer image for alpine:edge
 
 Confirm that the pull was successful.
 
-`sudo docker images`{{execute}}
+`docker images`{{execute}}
 
 Run a new container from the image.
 
-`sudo docker run --rm -it alpine:edge sh`{{execute}}
+`docker run --rm -it alpine:edge sh`{{execute}}
 
 
 
