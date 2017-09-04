@@ -1,3 +1,7 @@
+# DEPRECATED - DO NOT DELIVER
+
+Looking for our security content? Please see the security workshop in https://github.com/docker-training/presentations.
+
 # Security Workshop
 - Repository for Docker Security Workshop Hands on Labs.
 
